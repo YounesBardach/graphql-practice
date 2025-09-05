@@ -1,0 +1,18 @@
+{
+  "name": "graphql-backend-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node src/index.js",
+    "seed": "node prisma/seed.js",
+    "prisma:reset": "npx prisma migrate reset --force",
+    "demo": "node scripts/demo.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.9.0",
+    "@prisma/client": "^5.18.0",
+    "prisma": "^5.18.0"
+  }
+}

@@ -49,16 +49,19 @@ cd graphql-backend-starter
 # 2) Install dependencies
 npm install
 
-# 3) Generate Prisma client
+# 3) Create a .env file with the database connection string
+echo "DATABASE_URL=\"file:./dev.db\"" > .env
+
+# 4) Generate Prisma client
 npx prisma generate
 
-# 4) Set up database and run migrations
+# 5) Set up database and run migrations
 npx prisma migrate dev --name init
 
-# 5) Seed the database with sample data
+# 6) Seed the database with sample data
 npm run seed
 
-# 6) Start the development server
+# 7) Start the development server
 npm run dev
 ```
 
